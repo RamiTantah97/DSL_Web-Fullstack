@@ -1,0 +1,94 @@
+page h1
+    {
+        ! anything (: !
+        header
+        {
+            siteName s is 'my Site';
+            optionsList l1 is ['about' , 'services' , 'join us'];
+            button b1 is 'sign up' ;
+        }
+
+        body
+        {
+            ! anything (: !
+            optionsList l2 is [
+                        (image m1 is 'C:\\Users\\me\\Desktop\\image1.png') ,
+                        (image m2 is 'C:\\Users\\me\\Desktop\\image2.png') ,
+                        (image m3 is 'C:\\Users\\me\\Desktop\\image3.png')
+                               ];
+
+            description is 'information';
+
+            ! anything (: !
+
+            image m4 is 'C:\\Users\\me\\Desktop\\image4.png';
+
+            field f1(firstName) is NAME ;
+
+            article ar1 {
+                            arTitle t1 is 'Title1' ;
+                            arContent c1 is 'content...';
+                        }
+
+            article ar2 {
+                            ! anything (: !
+                            arTitle t2 is 'Title2' ;
+                            arContent c2 is [image m4 is 'C:\\Users\\me\\Desktop\\image4.png'];
+                         }
+
+            article ar2 {
+                            arTitle t3 is 'Title3' ;
+                            arContent c3 is [
+                                    image m5 is 'C:\\Users\\me\\Desktop\\image5.png',
+                                    description is 'information'
+                                            ];
+                         }
+
+            picker l3 is ['option1' ,'option2' , 'option3' ] ;
+
+            choices ch1 is ['choice1' , 'choice2' , 'choice3'];
+
+        }
+
+        footer
+        {
+            ! anything (: !
+            contactInfo ph1 is '+96312345678' ;
+            contactInfo e1 is 'example@gmail.com';
+            contactInfo a1 is 'facebook account' ;
+            contactInfo a2 is 'linkedin account';
+            description is 'information';
+
+        }
+
+    }
+
+! anything (: !
+
+controller c1 controls p1
+    {
+        ! anything (: !
+        if (f1 is 6)
+            goto p2 ;
+        else
+            goto p3 ;
+
+        ! anything (: !
+            while(f1 is 'true'){
+                 print 'ddd';
+                 if(f is 7)
+                     print 'ddd';
+                 ! anything (: !
+                }
+
+            if(f2 is 'string')
+                 {
+                     ! anything (: !
+                        if(f3 is 4)
+                            print 'good';
+                        while(f3 is 5)
+                            {print f3 ;}
+                        goto p4 ;
+                 }
+
+    }
